@@ -84,3 +84,17 @@ let add = num7 + num8
 console.log(add);
 
 
+//push
+//pop
+//unshift
+//shift
+//splice
+//slice
+//split
+//join
+//concat
+//sort
+//reverse
+//indexof
+
+
