@@ -1,9 +1,10 @@
 {
-  "name": "simple_calculator",
-  "version": "1.0.0",
+  "name": "kashif786_simple_calculator",
+  "version": "2.0.0",
   "description": "A simpe calculator with TypeScript,Node.js And Inquirer",
   "main": "index.js",
   "type": "module",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
