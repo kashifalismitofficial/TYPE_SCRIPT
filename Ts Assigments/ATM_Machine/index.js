@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 10000; // Dollar
 let pinNumber = 1179;
@@ -23,12 +24,13 @@ if (pinAnswer.pin === pinNumber) {
                 type: "number"
             }
         ]);
-        if (amountAns >= myBalance) {
-            myBalance -= amountAns.Amount;
-            console.log(`Your Current Balance is ${myBalance}$$`);
+        if (amountAns.Amount >= myBalance) {
+            console.log("Insufficient Balance");
+            console.log(`Your Current Amount is ${myBalance}$$`);
         }
         else {
-            console.log("insufisient balance");
+            myBalance -= amountAns.Amount;
+            console.log(`Your Current Balance is ${myBalance}$$`);
         }
     }
     if (choosen.operation === "Balance Check") {
